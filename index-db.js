@@ -6,11 +6,14 @@ var con = mysql.createConnection({ host: process.env.MYSQL_HOST, user: process.e
 // mysql code
 
 con.connect(function(err){
+  console.log('Connection host:', process.env.MYSQL_HOST);
+  console.log('Connection user:', process.env.MYSQL_USER);
   if(err){
     console.log('Error connecting to db: ', err);
     return;
   }
-  console.log('Connection to db established');
+  console.log('Connection to db established, host:', process.env.MYSQL_HOST);
+
   con.query('CREATE TABLE IF NOT EXISTS visits (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, ts BIGINT)',function(err) {
     if(err) throw err;
   });
