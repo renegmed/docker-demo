@@ -1,4 +1,4 @@
-node (label 'docker-slave-label') {
+node ('docker-slave-label') {
    def commit_id 
    stage('Preparation') {
      checkout scm
