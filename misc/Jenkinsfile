@@ -1,5 +1,6 @@
 node {
    def commit_id
+   agent { label 'docker-slave-label' }
    stage('Preparation') {
      checkout scm
     //  save to temporary file
