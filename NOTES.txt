@@ -1,0 +1,10 @@
+Jenkins Plugins
+
+NodeJS ( then install nodejs to Global Tool Configuration)
+CloudBees Docker Build & Publish
+Docker Pipeline
+Docker (?, not sure)
+
+Credentials
+    github 
+    dockerhub 
